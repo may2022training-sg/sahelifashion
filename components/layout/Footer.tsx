@@ -59,11 +59,6 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/categories" className="text-[#2b2b2b]/80 hover:text-[#c25975] transition-colors">
-                  Attire Categories
-                </Link>
-              </li>
-              <li>
                 <Link href="/about" className="text-[#2b2b2b]/80 hover:text-[#c25975] transition-colors">
                   Our Story & Brand
                 </Link>

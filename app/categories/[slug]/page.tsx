@@ -32,7 +32,7 @@ export default async function CategorySlugPage({ params }: CategoryPageProps) {
       <Breadcrumbs
         items={[
           { label: 'Home', href: '/' },
-          { label: 'Categories', href: '/categories' },
+          { label: 'Products', href: '/products' },
           { label: category.name, href: `/categories/${category.slug}` },
         ]}
       />
