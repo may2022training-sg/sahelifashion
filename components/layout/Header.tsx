@@ -55,14 +55,22 @@ export function Header() {
           </nav>
 
           <div className="hidden items-center gap-3 md:flex">
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-md border border-[#d4af37] bg-[#fffaf1] px-4 py-2.5 text-[10px] font-medium uppercase tracking-[0.22em] text-[#800020] transition-colors duration-200 hover:bg-[#fdf1d4]"
-            >
-              {t('whatsapp')}
-            </a>
+            <div className="flex flex-col items-center gap-1">
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-md border border-[#d4af37] bg-[#fffaf1] px-4 py-2.5 text-[10px] font-medium uppercase tracking-[0.22em] text-[#800020] transition-colors duration-200 hover:bg-[#fdf1d4]"
+              >
+                {t('whatsapp')}
+              </a>
+              <a
+                href="tel:+918469484356"
+                className="text-[10px] font-medium tracking-[0.04em] text-[#7a4d1e] transition-colors hover:text-[#800020]"
+              >
+                +91 8469484356
+              </a>
+            </div>
             <Link
               href="/contact#inquiry-form"
               className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-md bg-[#800020] px-5 py-2.5 text-[10px] font-medium uppercase tracking-[0.22em] text-white transition-colors duration-200 hover:bg-[#5d001a]"
