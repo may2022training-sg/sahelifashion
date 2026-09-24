@@ -15,6 +15,9 @@ export interface Product {
   categoryId: string
   featured: boolean
   images: string[]
+  price: number
+  color?: string
+  sizes: string[]
   fabric?: string
   technique?: string
   fit?: string

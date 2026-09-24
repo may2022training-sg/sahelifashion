@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { siteConfig } from '@/config/site'
 import { MobileMenu } from './MobileMenu'
+import { HeaderSearch } from './HeaderSearch'
 import { useLanguage } from '@/components/providers/LanguageProvider'
 
 export function Header() {
@@ -55,6 +56,7 @@ export function Header() {
           </nav>
 
           <div className="hidden items-center gap-3 md:flex">
+            <HeaderSearch />
             <div className="flex flex-col items-center gap-1">
               <a
                 href={whatsappUrl}
@@ -80,6 +82,7 @@ export function Header() {
           </div>
 
           <div className="flex items-center gap-2 md:hidden">
+            <HeaderSearch />
             <button
               type="button"
               onClick={() => setLanguage(language === 'en' ? 'gu' : 'en')}

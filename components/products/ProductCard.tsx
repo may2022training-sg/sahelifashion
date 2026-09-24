@@ -13,7 +13,7 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="group flex h-full flex-col overflow-hidden rounded-[28px] border border-[#e5c158]/70 bg-[#fffdf5] shadow-[0_18px_40px_rgba(128,0,32,0.06)] transition-shadow hover:shadow-[0_22px_45px_rgba(128,0,32,0.1)]">
       <div className="jharokha-frame m-3 mb-0 rounded-[24px] p-2">
-        <Link href={`/product/${product.slug}`} className="relative block aspect-[3/4] w-full overflow-hidden rounded-[18px] bg-stone-100">
+        <Link href={`/products/${product.slug}`} className="relative block aspect-[3/4] w-full overflow-hidden rounded-[18px] bg-stone-100">
           <FallbackImage
             src={product.images[0]}
             alt={product.title}
@@ -26,7 +26,7 @@ export function ProductCard({ product }: ProductCardProps) {
       <div className="flex flex-1 flex-col justify-between p-5">
         <div>
           <h3 className="font-serif font-semibold text-stone-900 text-lg mb-2 line-clamp-1">
-            <Link href={`/product/${product.slug}`} className="hover:text-amber-800 transition-colors">
+            <Link href={`/products/${product.slug}`} className="hover:text-amber-800 transition-colors">
               {product.title}
             </Link>
           </h3>
@@ -42,7 +42,7 @@ export function ProductCard({ product }: ProductCardProps) {
             className="w-full flex items-center justify-center py-2.5 px-3 rounded bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-xs transition-colors"
           />
           <Link
-            href={`/product/${product.slug}`}
+            href={`/products/${product.slug}`}
             className="text-center text-xs font-medium text-stone-700 hover:text-amber-800 py-1 transition-colors"
           >
             View Details &rarr;
