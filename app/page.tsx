@@ -10,38 +10,41 @@ import { FallbackImage } from '@/components/ui/FallbackImage'
 export default function HomePage() {
   return (
     <div className="flex flex-col gap-16 pb-16 md:gap-24">
-      <section className="fade-up-section relative isolate w-full min-h-[80vh] overflow-hidden bg-[#180d0a] text-[#fdf8ee]">
+      <section className="fade-up-section relative isolate min-h-[72svh] w-full overflow-hidden bg-[#180d0a] text-[#fdf8ee] md:min-h-[calc(100svh-9rem)]">
         <Image
           src="/images/hero-bg.jpg"
           alt="Saheli Fashion Ethnic Wear Collection"
           fill
           priority
-          className="absolute inset-0 z-0 h-full w-full object-cover object-center"
+          sizes="100vw"
+          className="absolute inset-0 z-0 h-full w-full object-cover object-[62%_center] md:object-center"
         />
-        <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/55 via-black/35 to-black/20" />
+        <div className="absolute inset-0 z-10 bg-[linear-gradient(90deg,rgba(18,8,5,0.82)_0%,rgba(18,8,5,0.56)_38%,rgba(18,8,5,0.12)_78%,rgba(18,8,5,0.2)_100%)]" />
+        <div className="absolute inset-0 z-10 bg-[linear-gradient(0deg,rgba(18,8,5,0.48)_0%,transparent_42%)]" />
 
-        <div className="relative z-20 mx-auto flex min-h-[80vh] w-full max-w-7xl items-center px-4 py-16 sm:px-6 md:px-10 lg:px-12">
-          <div className="max-w-2xl">
-            <span className="mb-3 block text-sm font-medium uppercase tracking-[0.28rem] text-[#f0d99b]">
+        <div className="relative z-20 mx-auto flex min-h-[72svh] w-full max-w-7xl items-end px-5 py-14 sm:px-8 sm:py-20 md:min-h-[calc(100svh-9rem)] md:items-center md:px-12 md:py-16">
+          <div className="max-w-3xl">
+            <div className="mb-5 flex items-center gap-3 text-[10px] font-medium uppercase tracking-[0.34em] text-[#f0d99b] sm:text-xs">
+              <span className="h-px w-10 bg-[#d4af37]" />
               Handcrafted Indian Heritage
-            </span>
-            <h1 className="mb-6 font-serif text-4xl font-bold leading-tight text-stone-50 sm:text-5xl md:text-6xl">
-              Elegance Woven in Every Thread
+            </div>
+            <h1 className="max-w-2xl font-serif text-5xl font-semibold leading-[0.98] tracking-[-0.02em] text-[#fffaf0] sm:text-6xl md:text-7xl lg:text-8xl">
+              Elegance <span className="block text-[#f0d99b] italic">Woven in Every Thread</span>
             </h1>
-            <p className="mb-8 max-w-xl text-base leading-relaxed text-stone-200 sm:text-lg md:text-xl">
+            <p className="mt-7 max-w-xl text-sm leading-7 text-[#f8ead7] sm:text-base sm:leading-8 md:text-lg">
               Discover our curated collection of luxury Sarees, Designer Lehengas, and Bespoke Ethnic Couture crafted for your most cherished moments.
             </p>
-            <div className="flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
+            <div className="mt-9 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center">
               <Link
                 href="/products"
-                className="inline-flex items-center justify-center rounded-md bg-[#d4af37] px-8 py-3.5 text-center font-medium text-[#2a1b14] transition-colors duration-200 hover:bg-[#c9a632]"
+                className="inline-flex min-h-14 items-center justify-center rounded-md bg-[#d4af37] px-9 py-4 text-center text-sm font-semibold uppercase tracking-[0.16em] text-[#24130c] shadow-[0_12px_30px_rgba(212,175,55,0.24)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#f0d27a] hover:shadow-[0_16px_36px_rgba(212,175,55,0.32)]"
               >
                 Explore Collections
               </Link>
               <WhatsAppButton
                 message="Namaste Saheli Fashion! I am exploring your homepage and would like to enquire about your latest ethnic wear collection."
                 label="WhatsApp Enquiry"
-                className="inline-flex items-center justify-center rounded-md border border-[#f0d99b] bg-[#2a1b14]/55 px-8 py-3.5 font-medium text-stone-50 transition-colors duration-200 hover:bg-[#2a1b14]/80"
+                className="inline-flex min-h-14 items-center justify-center rounded-md border border-[#f0d99b]/70 bg-[#2a1b14]/35 px-8 py-4 text-sm font-medium uppercase tracking-[0.12em] text-[#fffaf0] backdrop-blur-sm transition-colors duration-200 hover:bg-[#2a1b14]/70"
               />
             </div>
           </div>
