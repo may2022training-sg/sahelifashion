@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+Host: https://www.sahelifashion.com
+Sitemap: https://www.sahelifashion.com/sitemap.xml

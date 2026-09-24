@@ -1,0 +1,43 @@
+export type Language = 'en' | 'gu'
+
+export const siteConfig = {
+  name: 'Saheli Fashion',
+  logoText: 'સહેલી | SAHELI',
+  tagline: 'સાથે મળીને | Together & Empowered',
+  description: 'Curated luxury Indian ethnic wear, sarees, lehengas, and bespoke couture.',
+  url: 'https://www.sahelifashion.com',
+  phone: '+91 8469484356',
+  whatsappNumber: '918469484356',
+  email: 'Sahelifashion4826@gmail.com',
+  address: 'A504, Shantinagar Flats, Near Somiya Residency, Opposite J. J. Parekh, Sarkhej - Ujala, Ahmedabad 382210',
+  contactPersons: 'Heena Ghelani & Nisha Devani',
+  mapsUrl: 'https://maps.app.goo.gl/QGzPFUNd5wqcM3D58',
+  hours: 'Mon – Sat: 10:30 AM – 8:00 PM',
+  ogImage: '/images/hero-bg.jpg',
+  translations: {
+    en: {
+      home: 'Home',
+      collections: 'Collections',
+      categories: 'Categories',
+      about: 'About Us',
+      contact: 'Contact',
+      shop: 'Shop',
+      whatsapp: 'WhatsApp',
+      studioEnquiry: 'Studio Enquiry',
+      languageToggle: 'ગુજરાતી',
+      categoryTicker: 'કુર્તી (Kurti) • કોટ સેટ (Co-ord Set) • ટયુનિક (Tunic) • પ્લાઝો પેન્ટ (Plazo Pant) • પેન્ટ સેટ (Pant Set) • સાડી (Saree) • દુપટ્ટા પેર (Dupatta Pair)',
+    },
+    gu: {
+      home: 'હોમ',
+      collections: 'કલેક્શન',
+      categories: 'કેટેગરીઝ',
+      about: 'અમારા વિષે',
+      contact: 'સપર્ક',
+      shop: 'શોપ',
+      whatsapp: 'વોટ્સએપ',
+      studioEnquiry: 'સ્ટુડિયો enquiry',
+      languageToggle: 'EN',
+      categoryTicker: 'કુર્તી (Kurti) • કોટ સેટ (Co-ord Set) • ટયુનિક (Tunic) • પ્લાઝો પેન્ટ (Plazo Pant) • પેન્ટ સેટ (Pant Set) • સાડી (Saree) • દુપટ્ટા પેર (Dupatta Pair)',
+    },
+  },
+} as const
